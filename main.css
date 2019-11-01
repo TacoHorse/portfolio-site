@@ -317,7 +317,7 @@ nav {
 
     .burger li {
         height: 56px;
-        border: solid 1px #7EB4F2;
+        /* border: solid 1px #7EB4F2; */
     }
 
     .burger li:hover {
