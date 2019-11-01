@@ -57,6 +57,13 @@ p {
     width: 100%;
 }
 
+.row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
 .column {
     display: flex;
     flex-direction: column;
@@ -201,6 +208,11 @@ nav {
     background-color: rgb(126, 126, 126);
 }
 
+.about-heading {
+    width: 100%;
+    background-color: rgb(126, 126, 126);   
+}
+
 .secondary-content-row {
     width: 70%;
 }
@@ -208,6 +220,11 @@ nav {
 .secondary-content {
     width: 100%;
     /* background-color: #5E86B5; */
+    background-color: rgb(68, 68, 68);
+}
+
+.project-heading {
+    width: 100%;
     background-color: rgb(68, 68, 68);
 }
 
@@ -286,12 +303,8 @@ nav {
 
     .main-content-row {
         width: 40%;
-        margin: 0;
-    }
-
-    .main-content {
-        margin-bottom: auto;
         margin-top: 110px;
+        margin-bottom: auto;
     }
 
     .secondary-content-row {

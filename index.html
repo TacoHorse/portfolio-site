@@ -16,7 +16,11 @@
 
 <body>
     <div class="wrapper column">
-        <section class="headwrap row">
+        <section class="headwrap row-reverse">
+            <header class="page-heading">
+                <h1 class="site-title">Site Title</h1>
+                <h3>headline</h3>
+            </header>
             <nav class="navbar">
                 <input id="burger-trigger" class="burger-trigger" type="checkbox" />
                 <label class="burger-label" for="burger-trigger">
@@ -43,27 +47,27 @@
 
                 </ul>
             </nav>
-            <header class="page-heading">
-                <h1 class="site-title">Site Title</h1>
-                <h3>headline</h3>
-            </header>
         </section>
         <main class="content-wrapper row">
             <section class="row main-content-row">
-                <article id="about-me" class="main-content content-boxes">
+                <header class="about-heading content-boxes">
                     <h2>About Me</h2>
+                </header>
+                <article id="about-me" class="main-content content-boxes">
                     <p>About me content</p>
                 </article>
             </section>
             <section class="row secondary-content-row">
-                <article class="secondary-content content-boxes">
+                <header class="project-heading content-boxes">
                     <h2 id="projects">Projects section</h2>
+                </header>
+                <article class="secondary-content content-boxes">
                     <p>Description</p>
                     <div class="project-item-container column">
                         <section class="project-item">
                             <h3>Project Name</h3>
                             <figure class="project-figure">
-                                <img class="project-pics" src="" alt="project image">
+                                <img class="project-pics" alt="project image">
                                 <figcaption class="project-pics-captions">Project Description
                                     <p><em>Technologies Used: </em></p>
                                     <p><em>Live App: </em>
@@ -78,7 +82,9 @@
             </section>
         </main>
         <section class="quick-contact content-boxes">
-            <header><h2 id="contact-info">Contact Info</h2></header>
+            <header>
+                <h2 id="contact-info">Contact Info</h2>
+            </header>
             <address class="inner-contact-container">
                 <p>Name</p>
                 <p>E-mail</p>
