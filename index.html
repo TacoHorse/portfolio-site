@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sean Cowan, Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Include and check jQuery library integrity -->
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <div class="wrapper column">
+        <header class="headwrap row">
+            <nav class="navbar">
+                <input id="burger-trigger" class="burger-trigger" type="checkbox" />
+                <label class="burger-label" for="burger-trigger">
+                    <span class="burger-button burger-button-open"><img class="burger-button-image"
+                            src="images/mobilemenubutton.png" alt="Image, button to open menu"></span>
+                    <span class="burger-button burger-button-close"><img class="burger-button-image"
+                            src="images/mobilemenuclosebutton.png" alt="Image, button to close menu"></span>
+                </label>
+                <ul class="burger" id="burger" draggable="true">
+
+                    <li class="burger-top">Link</li>
+
+
+                    <li>Link</li>
+
+
+                    <li>Link</li>
+
+
+                    <li>Link</li>
+
+
+                    <li>Link</li>
+
+                </ul>
+            </nav>
+            <header class="page-heading">
+                <h1 class="site-title">Site Title</h1>
+                <h3>headline</h3>
+            </header>
+        </header>
+        <main class="content-wrapper row">
+            <section class="row main-content-row">
+                <article id="about-me" class="main-content content-boxes">
+                    <h2>About Me</h2>
+                    <p>About me content</p>
+                </article>
+            </section>
+            <section class="row secondary-content-row">
+                <article class="secondary-content content-boxes">
+                    <h2 id="projects">Projects section</h2>
+                    <p>Description</p>
+                    <div class="project-item-container column">
+                        <section class="project-item">
+                            <h3>Project Name</h3>
+                            <figure class="project-figure">
+                                <img class="project-pics" src="" alt="project image">
+                                <figcaption class="project-pics-captions">Project Description
+                                    <p><em>Technologies Used: </em></p>
+                                    <p><em>Live App: </em>
+                                    </p>
+                                    <p><em>GitHub Repo: </em>
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </section>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <section class="quick-contact content-boxes">
+            <address class="inner-contact-container">
+                <h2 id="contact-info">Contact Info</h2>
+                <p>Name</p>
+                <p>E-mail</p>
+                <p><em>LinkedIn: </em></p>
+                <p><em>GitHub: </em></p>
+            </address>
+        </section>
+    </div>
+    <footer class="content-boxes footer">
+        <p>Some footer content</p>
+    </footer>
+</body>
+
+
+</html>
