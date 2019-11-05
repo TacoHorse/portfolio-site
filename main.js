@@ -2,8 +2,64 @@
 
 function initSite() {
 
+    handleProjects();
+
+    // Adjust content box elements to fit to grid, on load and resize of screen
     adjustContentPosition();
     refreshWindow();
+}
+
+function handleProjects () {
+    let projectData = {
+        quizApplication: `<section class="project-item">
+        <h3>Solar System Quiz Application</h3>
+        <figure class="project-figure">
+            <img class="project-pics" src="images/quizpic.png" alt="project image">
+            <figcaption class="project-pics-captions">
+                <p>This was developed for the Bloc/Thinkful Web
+                        Developer
+                        course. Requirements were to create a simple
+                        one-directional quiz to practice the core principles of DOM Traversal and Manipulation
+                        via
+                        jQuery.
+                        Responsive mobile-first design with fully validated code. A full brief on all
+                        requirements
+                        is
+                        available in the GitHub repo.</p>
+                        <p><em>Technologies Used: </em>HTML 5, CSS 3, JavaScript, jQuery</p>
+                        <p><em>Live App: </em><a
+                                href="https://tacohorse.github.io/Solar-System-Quiz-App/app-index/index.html">Available
+                                here</a>
+                        </p>
+                        <p><em>GitHub Repo: </em><a
+                                href="https://github.com/TacoHorse/Solar-System-Quiz-App">Available
+                                here</a>
+                        </p>
+            </figcaption>
+        </figure>
+    </section>`,
+        placeHolder: `<section class="project-item">
+        <h3>Placeholder Project</h3>
+        <figure class="project-figure">
+            <img class="project-pics" src="" alt="project image">
+            <figcaption class="project-pics-captions">
+                <p>This is here to demonstrate the the horizontal scrolling of the projects section at larger screen resolutions.
+                It will not appear after a second project is completed. (Will not be seen by employers).</p>
+                        <p><em>Technologies Used: </em>None required.</p>
+                        <p><em>Live App: </em>N/A
+                        </p>
+                        <p><em>GitHub Repo: </em>N/A
+                        </p>
+            </figcaption>
+        </figure>
+    </section>`
+        };
+    let projectNames = ['quizApplication', 'placeHolder'];
+    for (let i = 0; i < projectNames.length; i++) {
+        // console.log(projectData[`${projectNames[i]}`]);
+        $('.project-item-container').append(projectData[projectNames[i]]);
+    }
+
 }
 
 function refreshWindow() {
