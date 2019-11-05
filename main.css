@@ -198,18 +198,10 @@ nav {
     background: linear-gradient(75deg, rgba(94,134,181,1) 0%, rgba(37,98,167,1) 100%);
 }
 
-.main-content {
-
-}
-
 .secondary-content-row {
     width: 70%;
     background: rgb(94,134,181);
     background: linear-gradient(347deg, rgba(94,134,181,1) 0%, rgba(37,98,167,1) 100%);
-}
-
-.secondary-content {
-
 }
 
 .project-item-container {
