@@ -14,6 +14,7 @@ function initSite() {
     refreshWindow();
 }
 
+// Informs Bloc grader of the purpose of the Resume link
 function handleResumeMessage() {
     $(document).on("click", ".resume", e => alert("This link will eventually lead to my updated resume which will be completed nearer to the end of the course."));
 }
