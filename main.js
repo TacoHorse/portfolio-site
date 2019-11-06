@@ -77,7 +77,6 @@ function refreshWindow() {
     let oldWidth = $(window).width();
     $(window).on('resize', e => {
         if ($(window).width() != oldWidth) {
-        console.log(oldWidth);
         window.location.href = window.location.href
         oldWidth = $(this).width();
         }
