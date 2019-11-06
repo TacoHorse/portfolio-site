@@ -15,7 +15,7 @@ function initSite() {
 }
 
 function handleResumeMessage() {
-    $(document).on("click", "#resume", e => alert("This link will eventually lead to my updated resume which will be completed nearer to the end of the course."));
+    $(document).on("click", ".resume", e => alert("This link will eventually lead to my updated resume which will be completed nearer to the end of the course."));
 }
 
 // Stores data for completed projects to insert into the DOM
