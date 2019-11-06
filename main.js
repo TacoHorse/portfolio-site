@@ -69,7 +69,8 @@ function handleProjects() {
 function refreshWindow() {
     let oldWidth = $(window).width();
     $(window).on('resize', e => {
-        if ($(this).width() != oldWidth) {
+        if ($(window).width() != oldWidth) {
+        console.log(oldWidth);
         window.location.href = window.location.href
         oldWidth = $(this).width();
         }
@@ -78,7 +79,6 @@ function refreshWindow() {
 
 function adjustContentPosition() {
     let elements = ["main-content-row", "secondary-content-row", "page-heading", "quick-contact"];
-    console.log(elements);
     for (let i = 0; i < elements.length; i++) {
         let coords = getElementCoords(elements[i]);
         setSize(elements[i], coords.width, coords.height, coords.left);

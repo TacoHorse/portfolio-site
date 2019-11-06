@@ -237,7 +237,9 @@ nav {
 }
 
 .quick-contact {
+    width: 60%;
     margin-top: 400px;
+    margin-bottom: 400px;
     margin-left: auto;
     order: 2;
     background: rgb(94,134,181);
@@ -251,9 +253,24 @@ nav {
 
 .footer {
     text-align: center;
-    background: black;
-    border: none;
     order: 3;
+    background: rgb(25,67,115);
+}
+
+.footer-items {
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.footer-icons {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.footer-bottom {
+    display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -286,6 +303,23 @@ nav {
 
 @media screen and (min-width: 1366px) {
 
+    body {
+        font-size: 22px;
+        line-height: 45px;
+    }
+
+    h1 {
+        font-size: 55px;
+    }
+
+    h2 {
+        font-size: 44px;
+    }
+
+    h3 {
+        font-size: 38px;
+    }
+
     .page-heading {
         width: 50%;
     }
@@ -294,6 +328,7 @@ nav {
         flex-direction: row;
         flex-wrap: nowrap; 
         overflow: auto;
+        margin-right: 10px;
     }
 
     .project-item {
@@ -351,23 +386,48 @@ nav {
 
     /*End Burger nav */
 
-    body {
-        font-size: 22px;
-        line-height: 45px;
+    .footer {
+        padding-left: 5vw;
+        padding-right: 5vw;
     }
 
-    h1 {
-        font-size: 55px;
+    .footer-icons {
+        width: 100px;
+        height: 100px;
+        margin: 20px;
     }
 
-    h2 {
-        font-size: 44px;
+    .footer-bottom {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 50px;
+        margin-top: 10vh;
+    }
+    
+    .footer-bottom-items {
+        flex-basis: 30%;
+        align-items: center;
+    }
+    
+    .footer-bottom-center {
+        justify-content: flex-end;
     }
 
-    h3 {
-        font-size: 38px;
+    .footer-bottom-links {
+        line-height: 20px;
+        align-self: flex-end;
     }
 
+    .footer-logo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .footer-logo-caption {
+        max-width: 200px;
+    }
 }
 
 @media screen and (min-width: 1920px) {
