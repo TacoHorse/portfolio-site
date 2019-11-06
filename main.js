@@ -1,7 +1,9 @@
 'use strict'
 
+// Main function call on page load
 function initSite() {
 
+    // Generate project content
     handleProjects();
 
     // Adjust content box elements to fit to grid, on load and resize of screen
@@ -9,7 +11,9 @@ function initSite() {
     refreshWindow();
 }
 
-function handleProjects () {
+// Stores data for completed projects to insert into the DOM
+// Intend to replace with database driven source once that module is completed
+function handleProjects() {
     let projectData = {
         quizApplication: `<section class="project-item">
         <h3>Solar System Quiz Application</h3>
@@ -53,26 +57,32 @@ function handleProjects () {
             </figcaption>
         </figure>
     </section>`
-        };
+    };
     let projectNames = ['quizApplication', 'placeHolder'];
+
     for (let i = 0; i < projectNames.length; i++) {
-        // console.log(projectData[`${projectNames[i]}`]);
         $('.project-item-container').append(projectData[projectNames[i]]);
     }
 
 }
 
 function refreshWindow() {
-    $(window).on('resize', e => window.location.href = window.location.href);
+    let oldWidth = $(window).width();
+    $(window).on('resize', e => {
+        if ($(this).width() != oldWidth) {
+        window.location.href = window.location.href
+        oldWidth = $(this).width();
+        }
+    });
 }
 
 function adjustContentPosition() {
     let elements = ["main-content-row", "secondary-content-row", "page-heading", "quick-contact"];
     console.log(elements);
     for (let i = 0; i < elements.length; i++) {
-         let coords = getElementCoords(elements[i]);
-         setSize(elements[i], coords.width, coords.height, coords.left);
-     }
+        let coords = getElementCoords(elements[i]);
+        setSize(elements[i], coords.width, coords.height, coords.left);
+    }
 }
 
 function getElementCoords(elem) {
@@ -97,8 +107,8 @@ function setSize(elem, width, height, left) {
         newWidth += offset;
     }
     if (left === 0) {
-     newWidth -= offset;
-     }
+        newWidth -= offset;
+    }
     $(`.${elem}`).outerHeight(newHeight);
     $(`.${elem}`).outerWidth(newWidth);
 }
