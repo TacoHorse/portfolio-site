@@ -183,7 +183,7 @@ nav {
 
 .content-boxes {
     border: solid 1px #7EB4F2;
-    padding: 15px;
+    padding: 10px 5px 10px 5px;
 }
 
 .content-wrapper {
@@ -192,14 +192,14 @@ nav {
 
 .main-content-row {
     margin-top: -13px;
-    width: 70%;
-    margin-left: auto;
+    width: 100%;
+    margin-right: auto;
     background: rgb(94,134,181);
     background: linear-gradient(75deg, rgba(94,134,181,1) 0%, rgba(37,98,167,1) 100%);
 }
 
 .secondary-content-row {
-    width: 70%;
+    width: 100%;
     padding: 0;
     background: rgb(94,134,181);
     background: linear-gradient(347deg, rgba(94,134,181,1) 0%, rgba(37,98,167,1) 100%);
@@ -237,17 +237,14 @@ nav {
 }
 
 .quick-contact {
-    width: 60%;
-    margin-top: 400px;
-    margin-bottom: 400px;
-    margin-left: auto;
+    width: 100%;
+    margin-right: auto;
     order: 2;
     background: rgb(94,134,181);
     background: linear-gradient(347deg, rgba(94,134,181,1) 0%, rgba(37,98,167,1) 100%);
 }
 
 .inner-contact-container {
-    text-align: right;
     margin: 2vh 0 8vh 0;
 }
 
@@ -329,6 +326,7 @@ nav {
         flex-wrap: nowrap; 
         overflow: auto;
         margin-right: 10px;
+        justify-content: center;
     }
 
     .project-item {
