@@ -57,7 +57,7 @@ function handleProjects() {
     //     </figure>
     // </section>`
     };
-    let projectNames = ['quizApplication', 'placeHolder'];
+    let projectNames = ['quizApplication'];
 
     for (let i = 0; i < projectNames.length; i++) {
         $('.project-item-container').append(projectData[projectNames[i]]);
