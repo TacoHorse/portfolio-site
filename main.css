@@ -175,6 +175,7 @@ nav {
     margin-left: auto;
     padding: 10px;
     background: #194373;
+    transition: width ease 1s;
 }
 
 .headwrap {

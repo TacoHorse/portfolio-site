@@ -76,7 +76,7 @@ function refreshWindow() {
 }
 
 function adjustContentPosition() {
-    let elements = ["main-content-row", "secondary-content-row", "page-heading", "quick-contact"];
+    let elements = ["page-heading"];
     for (let i = 0; i < elements.length; i++) {
         let coords = getElementCoords(elements[i]);
         setSize(elements[i], coords.width, coords.height, coords.left);
