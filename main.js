@@ -32,11 +32,11 @@ function handleProjects() {
                         available in the GitHub repo.</p>
                         <p><em>Technologies Used: </em>HTML 5, CSS 3, JavaScript, jQuery</p>
                         <p><em>Live App: </em><a
-                                href="https://seancowan-dev.github.io/Solar-System-Quiz-App/app-index/index.html">Available
+                                href="https://seancowan-dev.github.io/Solar-System-Quiz-App/app-index/index.html" target="_blank">Available
                                 here</a>
                         </p>
                         <p><em>GitHub Repo: </em><a
-                                href="https://github.com/seancowan-dev/Solar-System-Quiz-App">Available
+                                href="https://github.com/seancowan-dev/Solar-System-Quiz-App" target="_blank">Available
                                 here</a>
                         </p>
             </figcaption>
