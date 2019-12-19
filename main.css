@@ -328,6 +328,7 @@ nav {
         overflow: auto;
         margin-right: 10px;
         justify-content: center;
+        padding-left: 50%;
     }
 
     .project-item {

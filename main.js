@@ -41,7 +41,25 @@ function handleProjects() {
                         </p>
             </figcaption>
         </figure>
-    </section>`
+    </section>`,
+    apiCapstone: `<section class="project-item">
+    <h3>Findthatmovie</h3>
+    <figure class="project-figure">
+        <img class="project-pics" src="images/moviepic.png" alt="project image">
+        <figcaption class="project-pics-captions">
+            <p>This application was developed to demonstrate my knowledge of RESTful APIs.  Its purpose is for locating movie reviews and trailers.</p>
+                    <p><em>Technologies Used: </em>HTML 5, CSS 3, JavaScript, jQuery</p>
+                    <p><em>Live App:</em> <a
+                    href="https://seancowan-dev.github.io/findthatmovie/" target="_blank">Available
+                    here</a>
+                    </p>
+                    <p><em>GitHub Repo:</em> <a
+                    href="https://github.com/seancowan-dev" target="_blank">Available
+                    here</a>
+                    </p>
+        </figcaption>
+    </figure>
+</section>`
     //     placeHolder: `<section class="project-item">
     //     <h3>Placeholder Project</h3>
     //     <figure class="project-figure">
@@ -57,7 +75,7 @@ function handleProjects() {
     //     </figure>
     // </section>`
     };
-    let projectNames = ['quizApplication'];
+    let projectNames = ['quizApplication', 'apiCapstone'];
 
     for (let i = 0; i < projectNames.length; i++) {
         $('.project-item-container').append(projectData[projectNames[i]]);
