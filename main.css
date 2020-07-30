@@ -326,9 +326,6 @@ nav {
         flex-direction: row;
         flex-wrap: nowrap; 
         overflow: auto;
-        margin-right: 10px;
-        justify-content: center;
-        padding-left: 50%;
     }
 
     .project-item {
@@ -342,6 +339,11 @@ nav {
         -webkit-box-shadow: -1px -1px 5px 0px rgb(17, 17, 17);
         -moz-box-shadow: -1px -1px 5px 0px rgb(17, 17, 17);
         box-shadow: -1px -1px 5px 0px rgb(17, 17, 17);
+    }
+
+    .project-item-spacer {
+        width: 200px;
+        min-width: 200px;
     }
 
     /* Burger nav start */
